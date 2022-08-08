@@ -8,7 +8,11 @@
 
 .header {
   background: var(--color-gray-light-1);
-  height: 5rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
 }
 
 .content {

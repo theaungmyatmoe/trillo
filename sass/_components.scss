@@ -1,0 +1,113 @@
+// logo
+.logo {
+  height: 3.25rem;
+  margin-left: 2rem;
+}
+
+// search box
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &__input {
+    width: 90%;
+    padding: .6rem 2rem;
+    border-radius: 100px;
+    outline: none;
+    border: 0;
+    background: var(--color-gray-light-2);
+    margin-right: -3.5rem;
+    transition: all .2s;
+    font-size: inherit;
+    color: var(--color-gray-dark-4);
+    font-family: inherit;
+    font-weight: 300;
+
+    &::placeholder {
+      color: inherit;
+
+    }
+
+    &:focus {
+      width: 100%;
+    }
+
+  }
+
+  &__btn {
+    outline: none;
+    border: 0;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-gray-dark-2);
+  }
+}
+
+// icon
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: var(--color-gray-dark-2);
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+
+
+  & > * {
+    padding: 0 2rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  & > *:hover {
+    background: var(--color-gray-light-3);
+    height: 100%;
+  }
+
+  &__icon-box {
+    font-size: 1rem;
+    position: relative;
+  }
+
+  &__noti-badge {
+    background: var(--color-primary);
+    width: 1.6rem;
+    height: 1.6rem;
+    color: var(--color-gray-light-1);
+    border-radius: 100px;
+    padding: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+}
+
+
+.user {
+  &__img {
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1.3rem;
+    color: var(--color-gray-dark-2);
+  }
+}
+
