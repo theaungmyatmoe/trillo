@@ -71,7 +71,36 @@ body {
 
 .hotel-view {
   flex: 1;
-  height: 80rem;
+}
+
+.overview {
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.detail {
+  display: flex;
+  gap: 4rem;
+  padding: 2rem 4rem 0 4rem;
+}
+
+.description {
+  background: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  padding: 4rem;
+  color: var(--color-gray-dark-2);
+  font-size: 1.2rem;
+  flex: 0 0 60%;
+}
+
+.reviews {
+  background: red;
+  flex: 1;
+}
+
+.recommend {
+  display: flex;
 }
 
 .logo {
@@ -302,6 +331,70 @@ body {
 .btn-text:focus {
   animation: slate 1s infinite;
   outline: none;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.about {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__item {
+  flex: 0 0 50%;
+  margin-bottom: 0.7rem;
+}
+.list__item::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.7rem;
+  background-image: url(../img/chevron-thin-right.svg);
+  background-size: cover;
+  background-color: var(--color-primary);
+  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-size: cover;
+  mask-image: url(../img/chevron-thin-right.svg);
+  mask-size: cover;
+  background-image: none;
+}
+
+.recommend {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.recommend__text {
+  font-size: 1.2rem;
+}
+.recommend__list {
+  display: flex;
+}
+.recommend__list-item {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-sizing: content-box;
+}
+.recommend__list-item:not(:first-child) {
+  margin-left: -1.5rem;
+}
+.recommend__img {
+  width: 100%;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
