@@ -194,9 +194,12 @@ body {
   transform: scaleY(1);
   width: 100%;
 }
+.sidebar__item:active::before {
+  background: var(--color-primary-light);
+}
 .sidebar__link:link, .sidebar__link:visited {
   color: var(--color-gray-light-1);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   text-decoration: none;
   width: 100%;
@@ -208,7 +211,7 @@ body {
   height: 1.8rem;
   width: 1.8rem;
   fill: currentColor;
-  margin-right: 2rem;
+  margin-right: 1.6rem;
 }
 .sidebar__legal {
   font-size: 1.3rem;
@@ -216,6 +219,89 @@ body {
   padding: 0 0.5rem;
   line-height: 1.6;
   color: var(--color-gray-light-2);
+}
+
+.gallery {
+  display: flex;
+}
+.gallery__image {
+  width: 100%;
+  display: block;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  background: var(--color-gray-light-1);
+}
+.overview__hotel-name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-right: 2.5rem;
+  color: var(--color-gray-dark-2);
+}
+.overview__stars {
+  margin-right: auto;
+  align-items: stretch;
+}
+.overview__stars-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--color-primary);
+  fill: currentColor;
+}
+.overview__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.overview__location {
+  display: flex;
+  gap: 2rem;
+}
+.overview__location-box {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.overview__map-icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-primary);
+}
+.overview__votes {
+  background: var(--color-primary);
+  color: var(--color-gray-light-1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem 2rem;
+  justify-content: center;
+  text-align: center;
+}
+.overview__rating-average {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.overview__rating-votes-rating-count {
+  font-weight: bold;
+}
+
+.btn-text, .btn-text:visited, .btn-text:link {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s;
+}
+.btn-text:hover {
+  color: var(--color-gray-dark-1);
+}
+.btn-text:focus {
+  animation: slate 1s infinite;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

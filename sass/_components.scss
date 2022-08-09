@@ -149,10 +149,14 @@
     width: 100%;
   }
 
+  &__item:active::before {
+    background: var(--color-primary-light);
+  }
+
   &__link:link,
   &__link:visited {
     color: var(--color-gray-light-1);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     text-decoration: none;
     width: 100%;
@@ -161,11 +165,12 @@
     z-index: 10;
   }
 
+
   &__icon {
     height: 1.8rem;
     width: 1.8rem;
     fill: currentColor;
-    margin-right: 2rem;
+    margin-right: 1.6rem;
   }
 
   &__legal {
@@ -176,3 +181,109 @@
     color: var(--color-gray-light-2);
   }
 }
+
+
+// Hotel overview
+.gallery {
+  display: flex;
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  background: var(--color-gray-light-1);
+
+  &__hotel-name {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-right: 2.5rem;
+    color: var(--color-gray-dark-2);
+  }
+
+  &__stars {
+    margin-right: auto;
+    align-items: stretch;
+  }
+
+  &__stars-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: var(--color-primary);
+    fill: currentColor;
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+
+  &__location {
+    display: flex;
+    gap: 2rem;
+  }
+
+
+  &__location-box {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+
+  &__map-icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-primary);
+  }
+
+  &__votes {
+    background: var(--color-primary);
+    color: var(--color-gray-light-1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__rating-average {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  &__rating-votes-rating-count {
+    font-weight: bold;
+  }
+}
+
+// Text button
+.btn-text {
+  &,
+  &:visited,
+  &:link {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: all .3s;
+  }
+
+  &:hover {
+    color: var(--color-gray-dark-1);
+  }
+
+  &:focus {
+    animation: slate 1s infinite;
+    outline: none;
+  }
+}
+

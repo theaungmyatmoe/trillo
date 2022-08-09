@@ -1,0 +1,14 @@
+@keyframes slate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 .25rem .5rem rgba(black, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
