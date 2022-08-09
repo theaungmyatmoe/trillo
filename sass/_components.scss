@@ -368,3 +368,70 @@
     display: inline-block;
   }
 }
+
+
+.review {
+  background: #fff;
+  padding: 3rem 5rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-gray-dark-2);
+
+  &__text {
+
+  }
+
+  &__user {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.3rem;
+    align-items: center;
+  }
+
+
+  &__user-name {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__user-date {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+
+  &__photo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__rating {
+    margin-left: auto;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-primary);
+  }
+
+}
+
+
+// button
+
+.btn-inline {
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid var(--color-primary);
+  transition: all .3s;
+
+  & span {
+    margin-left: 3px;
+    transition: all .3s;
+  }
+
+  &:hover {
+    span {
+      margin-left: 8px;
+    }
+  }
+}

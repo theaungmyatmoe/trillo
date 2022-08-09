@@ -81,7 +81,7 @@ body {
 .detail {
   display: flex;
   gap: 4rem;
-  padding: 2rem 4rem 0 4rem;
+  padding: 4rem;
 }
 
 .description {
@@ -94,13 +94,17 @@ body {
   flex: 0 0 60%;
 }
 
-.reviews {
-  background: red;
-  flex: 1;
-}
-
 .recommend {
   display: flex;
+}
+
+.reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .logo {
@@ -395,6 +399,54 @@ body {
   width: 100%;
   border-radius: 50%;
   display: inline-block;
+}
+
+.review {
+  background: #fff;
+  padding: 3rem 5rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-gray-dark-2);
+}
+.review__user {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.3rem;
+  align-items: center;
+}
+.review__user-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.review__user-date {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.review__photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.review__rating {
+  margin-left: auto;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.btn-inline {
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid var(--color-primary);
+  transition: all 0.3s;
+}
+.btn-inline span {
+  margin-left: 3px;
+  transition: all 0.3s;
+}
+.btn-inline:hover span {
+  margin-left: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
