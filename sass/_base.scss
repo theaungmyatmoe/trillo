@@ -17,6 +17,8 @@
 
 $bp-largest: 75rem; // 1200px
 $bp-medium: 68.75rem; // 1100px
+$bp-small: 37.5rem; // 600px
+$bp-extra-small: 21.58rem; // 350px
 
 * {
   margin: 0;
@@ -36,6 +38,13 @@ html {
 
   @media screen and (max-width: $bp-medium) {
     font-size: 50%; // 8px
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 40%; //7px
+  }
+  @media screen and (max-width: $bp-extra-small) {
+    font-size: 37%; //6px
   }
 }
 

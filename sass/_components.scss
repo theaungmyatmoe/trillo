@@ -10,7 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 1;
 
+  @media screen and (max-width: $bp-extra-small) {
+    flex: 0 0 100%;
+    order: 1;
+  }
 
   &__input {
     width: 90%;
@@ -116,10 +121,11 @@
 
 .sidebar {
 
-
   @media screen and (max-width: $bp-medium) {
     padding: 0;
   }
+
+
 
   &__nav {
     display: flex;
@@ -187,6 +193,8 @@
     @media screen and (max-width: $bp-medium) {
       justify-content: center;
     }
+
+
   }
 
 
@@ -370,6 +378,10 @@
   gap: 4rem;
   align-items: center;
 
+  @media screen and (max-width: $bp-medium) {
+    justify-content: space-around;
+  }
+
   &__text {
     font-size: 1.2rem;
   }
@@ -387,12 +399,22 @@
 
     &:not(:first-child) {
       margin-left: -1.5rem;
+
+      @media screen and (max-width: $bp-medium) {
+        margin-left: -2.5rem;
+      }
     }
 
     @media screen and (max-width: $bp-medium) {
       width: 3rem;
       height: 3rem;
     }
+
+    @media screen and (max-width: $bp-medium) {
+      width: 4rem;
+      height: 4rem;
+    }
+
   }
 
   &__img {
@@ -411,7 +433,9 @@
   color: var(--color-gray-dark-2);
 
   &__text {
-
+    @media screen and (max-width: $bp-small) {
+      font-size: 1.5rem;
+    }
   }
 
   &__user {
@@ -426,11 +450,19 @@
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
+
+    @media screen and (max-width: $bp-small) {
+      font-size: 1.5rem;
+    }
   }
 
   &__user-date {
     font-size: .8rem;
     font-weight: 300;
+
+    @media screen and (max-width: $bp-small) {
+      font-size: 1.3rem;
+    }
   }
 
   &__photo {
@@ -475,6 +507,14 @@
   background: #fff;
   padding: 4rem;
   text-align: center;
+
+
+  @media screen and (max-width: $bp-small) {
+    margin-top: 3rem;
+  }
+  @media screen and (max-width: $bp-extra-small) {
+    font-size: 2rem;
+  }
 
   &__book-now {
     text-align: center;

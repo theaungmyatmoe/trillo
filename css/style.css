@@ -33,6 +33,16 @@ html {
     font-size: 50%;
   }
 }
+@media screen and (max-width: 37.5rem) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (max-width: 21.58rem) {
+  html {
+    font-size: 37%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -69,6 +79,13 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
+}
+@media screen and (max-width: 21.58rem) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 11rem;
+  }
 }
 
 .content {
@@ -116,6 +133,12 @@ body {
     gap: 2rem;
   }
 }
+@media screen and (max-width: 37.5rem) {
+  .detail {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
 
 .description {
   background: #fff;
@@ -125,6 +148,11 @@ body {
   color: var(--color-gray-dark-2);
   font-size: 1.2rem;
   flex: 0 0 60%;
+}
+@media screen and (max-width: 68.75rem) {
+  .description {
+    font-size: 1.8rem;
+  }
 }
 
 .recommend {
@@ -150,6 +178,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 1;
+}
+@media screen and (max-width: 21.58rem) {
+  .search {
+    flex: 0 0 100%;
+    order: 1;
+  }
 }
 .search__input {
   width: 90%;
@@ -442,6 +477,11 @@ body {
   gap: 4rem;
   align-items: center;
 }
+@media screen and (max-width: 68.75rem) {
+  .recommend {
+    justify-content: space-around;
+  }
+}
 .recommend__text {
   font-size: 1.2rem;
 }
@@ -459,9 +499,20 @@ body {
   margin-left: -1.5rem;
 }
 @media screen and (max-width: 68.75rem) {
+  .recommend__list-item:not(:first-child) {
+    margin-left: -2.5rem;
+  }
+}
+@media screen and (max-width: 68.75rem) {
   .recommend__list-item {
     width: 3rem;
     height: 3rem;
+  }
+}
+@media screen and (max-width: 68.75rem) {
+  .recommend__list-item {
+    width: 4rem;
+    height: 4rem;
   }
 }
 .recommend__img {
@@ -477,6 +528,11 @@ body {
   line-height: 1.7;
   color: var(--color-gray-dark-2);
 }
+@media screen and (max-width: 37.5rem) {
+  .review__text {
+    font-size: 1.5rem;
+  }
+}
 .review__user {
   display: flex;
   margin-top: 2rem;
@@ -488,9 +544,19 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
+@media screen and (max-width: 37.5rem) {
+  .review__user-name {
+    font-size: 1.5rem;
+  }
+}
 .review__user-date {
   font-size: 0.8rem;
   font-weight: 300;
+}
+@media screen and (max-width: 37.5rem) {
+  .review__user-date {
+    font-size: 1.3rem;
+  }
 }
 .review__photo {
   width: 4rem;
@@ -524,6 +590,16 @@ body {
   background: #fff;
   padding: 4rem;
   text-align: center;
+}
+@media screen and (max-width: 37.5rem) {
+  .cta {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 21.58rem) {
+  .cta {
+    font-size: 2rem;
+  }
 }
 .cta__book-now {
   text-align: center;
