@@ -4,6 +4,16 @@
   max-width: 120rem;
   min-height: 50rem;
   box-shadow: var(--shadow-dark);
+
+  @media screen and (max-width: $bp-largest) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 .header {
@@ -17,6 +27,11 @@
 
 .content {
   display: flex;
+
+  @media screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+
 }
 
 .sidebar {
@@ -37,6 +52,11 @@
 .overview {
   margin-bottom: 4rem;
   border-bottom: 1px solid rgba(black, 0.05);
+
+
+  @media screen and (max-width: $bp-medium) {
+    margin-bottom: 2rem;
+  }
 }
 
 // detail
@@ -45,6 +65,11 @@
   gap: 4rem;
   //padding: 2rem 4rem 0 4rem;
   padding: 4rem;
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    gap: 2rem;
+  }
 }
 
 .description {

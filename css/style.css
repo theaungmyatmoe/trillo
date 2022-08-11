@@ -28,6 +28,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media screen and (max-width: 68.75rem) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -44,6 +49,18 @@ body {
   min-height: 50rem;
   box-shadow: var(--shadow-dark);
 }
+@media screen and (max-width: 75rem) {
+  .container {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 68.75rem) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+}
 
 .header {
   background: var(--color-gray-light-1);
@@ -56,6 +73,11 @@ body {
 
 .content {
   display: flex;
+}
+@media screen and (max-width: 68.75rem) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -77,11 +99,22 @@ body {
   margin-bottom: 4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+@media screen and (max-width: 68.75rem) {
+  .overview {
+    margin-bottom: 2rem;
+  }
+}
 
 .detail {
   display: flex;
   gap: 4rem;
   padding: 4rem;
+}
+@media screen and (max-width: 68.75rem) {
+  .detail {
+    padding: 2rem;
+    gap: 2rem;
+  }
 }
 
 .description {
@@ -199,6 +232,11 @@ body {
   color: var(--color-gray-dark-2);
 }
 
+@media screen and (max-width: 68.75rem) {
+  .sidebar {
+    padding: 0;
+  }
+}
 .sidebar__nav {
   display: flex;
   flex-direction: column;
@@ -206,11 +244,26 @@ body {
   list-style: none;
   gap: 1rem;
 }
+@media screen and (max-width: 68.75rem) {
+  .sidebar__nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+}
 .sidebar__item {
   padding: 1.5rem 3rem;
   display: flex;
   align-items: center;
   position: relative;
+}
+@media screen and (max-width: 68.75rem) {
+  .sidebar__item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .sidebar__item::before {
   content: "";
@@ -240,6 +293,11 @@ body {
   align-items: center;
   z-index: 10;
 }
+@media screen and (max-width: 68.75rem) {
+  .sidebar__link:link, .sidebar__link:visited {
+    justify-content: center;
+  }
+}
 .sidebar__icon {
   height: 1.8rem;
   width: 1.8rem;
@@ -252,6 +310,11 @@ body {
   padding: 0 0.5rem;
   line-height: 1.6;
   color: var(--color-gray-light-2);
+}
+@media screen and (max-width: 68.75rem) {
+  .sidebar__legal {
+    display: none;
+  }
 }
 
 .gallery {
@@ -394,6 +457,12 @@ body {
 }
 .recommend__list-item:not(:first-child) {
   margin-left: -1.5rem;
+}
+@media screen and (max-width: 68.75rem) {
+  .recommend__list-item {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 .recommend__img {
   width: 100%;
